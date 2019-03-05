@@ -25,9 +25,9 @@
         <Label Foreground="{DynamicResource CloseButtonStrokeHighlighted}" Content="First Number" HorizontalAlignment="Left" Margin="29,13,0,0" VerticalAlignment="Top"/>
         <Label Foreground="{DynamicResource CloseButtonStrokeHighlighted}" Content="Second Number" HorizontalAlignment="Left" Margin="187,13,0,0" VerticalAlignment="Top"/>
 
-        <Button x:Name="btnPlus" Click="BtnCalculate_Click" Content="+" Style="{DynamicResource StandardButton}" HorizontalAlignment="Left" Margin="143,83,0,0" VerticalAlignment="Top" Width="25"/>
-        <Button x:Name="btnMinus" Click="BtnCalculate_Click" Content="-" Style="{DynamicResource StandardButton}" HorizontalAlignment="Left" Margin="173,83,0,0" VerticalAlignment="Top" Width="25"/>
-        <Button x:Name="btnMultiply" Click="BtnCalculate_Click" Content="*" Style="{DynamicResource StandardButton}" HorizontalAlignment="Left" Margin="203,83,0,0" VerticalAlignment="Top" Width="25"/>
-        <Button x:Name="btnDivide" Click="BtnCalculate_Click" Content="/" Style="{DynamicResource StandardButton}" HorizontalAlignment="Left" Margin="233,83,0,0" VerticalAlignment="Top" Width="25"/>
+        <Button x:Name="btnPlus" Click="BtnCalculate_Click" Content="+" Style="{DynamicResource LowStandardButton}" HorizontalAlignment="Left" Margin="143,83,0,0" VerticalAlignment="Top" Width="25"/>
+        <Button x:Name="btnMinus" Click="BtnCalculate_Click" Content="-" Style="{DynamicResource LowStandardButton}" HorizontalAlignment="Left" Margin="173,83,0,0" VerticalAlignment="Top" Width="25"/>
+        <Button x:Name="btnMultiply" Click="BtnCalculate_Click" Content="*" Style="{DynamicResource LowStandardButton}" HorizontalAlignment="Left" Margin="203,83,0,0" VerticalAlignment="Top" Width="25"/>
+        <Button x:Name="btnDivide" Click="BtnCalculate_Click" Content="/" Style="{DynamicResource LowStandardButton}" HorizontalAlignment="Left" Margin="233,83,0,0" VerticalAlignment="Top" Width="25"/>
     </Grid>
 </Window>

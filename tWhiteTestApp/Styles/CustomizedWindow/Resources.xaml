@@ -14,6 +14,8 @@
     <SolidColorBrush x:Key="BorderBrushSelected" Color="#1C97EA"/>
     <SolidColorBrush x:Key="BackgroundNormal" Color="#3F3F46"/>
     <SolidColorBrush x:Key="BorderBrushNormal" Color="#54545C"/>
+    <SolidColorBrush x:Key="BlueBrush" Color="#007acc" />
+    <SolidColorBrush x:Key="LightBlueBrush" Color="#0098ff" />
 
     <!--Text Box-->
     <SolidColorBrush x:Key="TextBoxBackground" Color="#333337"/>

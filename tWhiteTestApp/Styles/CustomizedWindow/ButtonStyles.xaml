@@ -42,7 +42,7 @@
     <Style x:Key="LowStandardButton" TargetType="Button">
         <Setter Property="Visibility" Value="Visible"/>
         <Setter Property="Foreground" Value="{StaticResource Foreground}"/>
-        <Setter Property="Background" Value="{StaticResource LightBackground}"/>
+        <Setter Property="Background" Value="{StaticResource BlueBrush}"/>
         <Setter Property="BorderBrush" Value="{StaticResource BorderBrushNormal}"/>
         <Setter Property="Template">
             <Setter.Value>
@@ -58,7 +58,7 @@
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
                             <Setter Property="BorderBrush" Value="{StaticResource LightBackgroundOver}" />
-                            <Setter Property="Background" Value="{StaticResource LightBackgroundOver}" />
+                            <Setter Property="Background" Value="{StaticResource LightBlueBrush}" />
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="False">
                             <Setter Property="Opacity" Value=".5"/>
