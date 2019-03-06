@@ -13,6 +13,7 @@ namespace tWhiteTestApp.MainWindowTests
     public class MainWindowTests
     {
         private const string BINARY_TO_LAUNCH = @"tWhiteTestApp.exe"; //binary to launch
+        private const string WINDOW_NAME = "Calculator";
         private static string m_ApplicationPath; //path to application to launch
 
         [ClassInitialize]
@@ -27,7 +28,7 @@ namespace tWhiteTestApp.MainWindowTests
         [TestMethod]
         public void SuccessfulPlusCalculation()
         {
-            var window = WindowExtension.GetAppWindow(out Application application, m_ApplicationPath, "PlusCalculator"); //get window
+            var window = WindowExtension.GetAppWindow(out Application application, m_ApplicationPath, WINDOW_NAME); //get window
 
             //test data
             var firstNumber = -15;
@@ -58,7 +59,7 @@ namespace tWhiteTestApp.MainWindowTests
         [TestMethod]
         public void SuccessfulMinusCalculation()
         {
-            var window = WindowExtension.GetAppWindow(out Application application, m_ApplicationPath, "PlusCalculator"); //get window
+            var window = WindowExtension.GetAppWindow(out Application application, m_ApplicationPath, WINDOW_NAME); //get window
 
             //test data
             var firstNumber = -15;
@@ -89,7 +90,7 @@ namespace tWhiteTestApp.MainWindowTests
         [TestMethod]
         public void SuccessfulMultiplyCalculation()
         {
-            var window = WindowExtension.GetAppWindow(out Application application, m_ApplicationPath, "PlusCalculator"); //get window
+            var window = WindowExtension.GetAppWindow(out Application application, m_ApplicationPath, WINDOW_NAME); //get window
 
             //test data
             var firstNumber = -15;
@@ -120,7 +121,7 @@ namespace tWhiteTestApp.MainWindowTests
         [TestMethod]
         public void SuccessfulDivideCalculation()
         {
-            var window = WindowExtension.GetAppWindow(out Application application, m_ApplicationPath, "PlusCalculator"); //get window
+            var window = WindowExtension.GetAppWindow(out Application application, m_ApplicationPath, WINDOW_NAME); //get window
 
             //test data
             var firstNumber = -15.0;
@@ -155,7 +156,7 @@ namespace tWhiteTestApp.MainWindowTests
         [TestMethod]
         public void CantDivideByZero()
         {
-            var window = WindowExtension.GetAppWindow(out Application application, m_ApplicationPath, "PlusCalculator"); //get window
+            var window = WindowExtension.GetAppWindow(out Application application, m_ApplicationPath, WINDOW_NAME); //get window
 
             //test data
             var firstNumber = -15.0;

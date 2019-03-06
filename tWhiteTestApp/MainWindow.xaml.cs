@@ -43,5 +43,15 @@ namespace tWhiteTestApp
                 MessageBox.Show($"Can't divide by zero", "Can't perform divide operation"); //display error to the user
             }
         }
+
+        private void TextBox_LostFocus(object sender, RoutedEventArgs e)
+        {
+            var textBox = (sender as TextBox); //get button text (equals to operation)
+            
+            if (textBox.Text.Length == 0)
+            {
+                textBox.Text = "0";
+            }
+        }
     }
 }

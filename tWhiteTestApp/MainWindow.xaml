@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:tWhiteTestApp"
         mc:Ignorable="d"
-        Title="PlusCalculator" 
+        Title="Calculator" 
         Height="370" 
         Width="350" 
         ResizeMode="NoResize" 
@@ -17,8 +17,8 @@
         Foreground="{DynamicResource CloseButtonStroke}"
         >
     <Grid Background="{DynamicResource BackgroundNormal}">
-        <TextBox x:Name="tbFirstNumber" Text="{Binding FirstNumber}" Foreground="{DynamicResource CloseButtonStrokeHighlighted}" Style="{DynamicResource StandardTextBox}" HorizontalAlignment="Left" Height="23" Margin="29,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="tbSecondNumber" Text="{Binding SecondNumber}" Foreground="{DynamicResource CloseButtonStrokeHighlighted}" Style="{DynamicResource StandardTextBox}"  HorizontalAlignment="Left" Height="23" Margin="187,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbFirstNumber" Text="{Binding FirstNumber}"  Foreground="{DynamicResource CloseButtonStrokeHighlighted}" Style="{DynamicResource StandardTextBox}" HorizontalAlignment="Left" Height="23" Margin="29,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" LostFocus="TextBox_LostFocus"/>
+        <TextBox x:Name="tbSecondNumber" Text="{Binding SecondNumber}" Foreground="{DynamicResource CloseButtonStrokeHighlighted}" Style="{DynamicResource StandardTextBox}"  HorizontalAlignment="Left" Height="23" Margin="187,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" LostFocus="TextBox_LostFocus"/>
         <TextBox x:Name="tbResults" Text="{Binding CalculationResults}" Foreground="{DynamicResource CloseButtonStrokeHighlighted}" Style="{DynamicResource StandardTextBox}" IsReadOnly="True" HorizontalAlignment="Left" Height="197" Margin="29,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="278"/>
 
         <Rectangle Fill="#007acc" HorizontalAlignment="Left" Height="32" Margin="0,71,0,0" VerticalAlignment="Top" Width="334"/>
@@ -27,9 +27,9 @@
         <Label Foreground="{DynamicResource CloseButtonStrokeHighlighted}" Content="First Number" HorizontalAlignment="Left" Margin="29,13,0,0" VerticalAlignment="Top"/>
         <Label Foreground="{DynamicResource CloseButtonStrokeHighlighted}" Content="Second Number" HorizontalAlignment="Left" Margin="187,13,0,0" VerticalAlignment="Top"/>
 
-        <Button x:Name="btnPlus" Click="BtnCalculate_Click" Content="+" Style="{DynamicResource LowStandardButton}" HorizontalAlignment="Left" Margin="143,76,0,0" VerticalAlignment="Top" Width="25"/>
-        <Button x:Name="btnMinus" Click="BtnCalculate_Click" Content="-" Style="{DynamicResource LowStandardButton}" HorizontalAlignment="Left" Margin="173,76,0,0" VerticalAlignment="Top" Width="25"/>
-        <Button x:Name="btnMultiply" Click="BtnCalculate_Click" Content="*" Style="{DynamicResource LowStandardButton}" HorizontalAlignment="Left" Margin="203,76,0,0" VerticalAlignment="Top" Width="25"/>
-        <Button x:Name="btnDivide" Click="BtnCalculate_Click" Content="/" Style="{DynamicResource LowStandardButton}" HorizontalAlignment="Left" Margin="233,76,0,0" VerticalAlignment="Top" Width="25"/>
+        <Button x:Name="btnPlus" Click="BtnCalculate_Click" Content="+" Style="{DynamicResource LowStandardButton}" HorizontalAlignment="Left" Margin="143,71,0,0" VerticalAlignment="Top" Width="25" Height="31"/>
+        <Button x:Name="btnMinus" Click="BtnCalculate_Click" Content="-" Style="{DynamicResource LowStandardButton}" HorizontalAlignment="Left" Margin="173,71,0,0" VerticalAlignment="Top" Width="25" Height="31"/>
+        <Button x:Name="btnMultiply" Click="BtnCalculate_Click" Content="*" Style="{DynamicResource LowStandardButton}" HorizontalAlignment="Left" Margin="203,71,0,0" VerticalAlignment="Top" Width="25" Height="31"/>
+        <Button x:Name="btnDivide" Click="BtnCalculate_Click" Content="/" Style="{DynamicResource LowStandardButton}" HorizontalAlignment="Left" Margin="233,71,0,0" VerticalAlignment="Top" Width="25" Height="31"/>
     </Grid>
 </Window>
